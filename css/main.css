@@ -1,0 +1,1103 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Coiny|Permanent+Marker');
+@font-face {
+    font-family: CandL;
+    src: url(../fonts/champagne_limousines/CandL.ttf);
+}
+
+@font-face {
+    font-family: NeouB;
+    src: url(../fonts/neou/Neou-Bold.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    color: black;
+    font-family: "CandL";
+    width: 100%;
+    height: 40px;
+    float: right;
+    font-size: 2em;
+    text-align: right;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    margin-right: 20px;
+    transition: color 0.3s, background-color 0.3s;
+    overflow: hidden;
+}
+
+.menu a:hover {
+    color: black;
+    background-color: rgb(210, 210, 210)
+}
+
+.menu a:first-child {
+    margin-top: 70px;
+}
+
+#first {
+    background-image: url('../images/keyboard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.menu {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+    float: left;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.menu p {
+    font-family: "CandL";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#fade {
+    opacity: 0.5;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    float: right;
+    z-index: 9;
+}
+
+.menu-button {
+    width: 36px;
+    height: 55px;
+    margin-left: 20px;
+    z-index: 11;
+    float: left;
+    display: inline-block;
+    opacity: 1;
+    cursor: pointer;
+    position: fixed;
+}
+
+.menu-button:hover .menul {
+    background-color: rgb(170, 170, 170);
+}
+
+.menul {
+    margin-top: 10px;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border: 1px;
+    border-radius: 10px;
+    z-index: 3;
+    transition: background-color 0.3s;
+    border: 0.05px solid black;
+}
+
+.active {
+    background-color: black;
+}
+
+.menul:first-child {
+    margin-top: 25px;
+}
+
+#box {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 20%;
+    border: 0.15em solid white;
+    border-radius: 45px;
+    height: 10vh;
+    line-height: 10vh;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+#box p {
+    font-size: 1.5em;
+    font-family: 'Raleway';
+    letter-spacing: 3px;
+}
+
+#box:hover {
+    background-color: white;
+    color: rgba( 0, 0, 0, 0.7);
+}
+
+#second {
+    background-color: rgb(70, 70, 70);
+    height: 100vh;
+    width: 100%;
+}
+
+#second section {
+    width: 50%;
+    float: left;
+}
+
+#second section div {
+    position: absolute;
+    background: #fff;
+    border-radius: 2px;
+    height: 90vh;
+    margin-top: 5vh;
+    padding-top: 6vh;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-family: 'Raleway';
+    box-sizing: border-box;
+}
+
+#second section div p {
+    text-align: left;
+    padding-top: 4vh;
+    padding-right: 20px;
+    padding-left: 25px;
+    line-height: 6vh;
+    font-size: 1.8em;
+}
+
+#second section div h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#second article {
+    height: 100vh;
+    width: 50%;
+    float: right;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#second img {
+    height: 100%;
+    float: left;
+    display: block;
+}
+
+#second #line:first-child {
+    position: absolute;
+    height: 5vh;
+}
+
+#second #linetwo {
+    position: absolute;
+    height: 5vh;
+    bottom: 0;
+    z-index: 2;
+    background-color: white;
+    height: 5vh;
+    width: 100%;
+}
+
+#third {
+    background-attachment: fixed;
+    background-image: url("../images/studio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#fourth {
+    background-color: rgb(100, 100, 100);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#line {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+}
+
+#fourth h1 {
+    padding-top: 25vh;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+    font-family: 'NeouB';
+    font-size: 3em;
+    color: white;
+}
+
+#fourth p {
+    color: white;
+    font-family: 'CandL';
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    z-index: 2;
+    display: inline-block;
+    bottom: 90px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#fourth .more span {
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    box-sizing: border-box;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+#fourth .more span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: .3s;
+    bottom: 20px
+}
+
+#fourth .more span:nth-of-type(2) {
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+    bottom: 40px;
+}
+
+#fourth .more span:nth-of-type(3) {
+    -webkit-animation-delay: .3s;
+    animation-delay: .0s;
+    bottom: 60px;
+}
+
+@-webkit-keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#fourth .more span:hover {
+    opacity: 0.6;
+}
+
+#fifth {
+    background-image: url("../images/serverb.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.buttoncontain {
+    height: 10vh;
+    background-color: white;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.closebutton {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    left: calc(50% - 16.5px);
+    margin-top: 2.5vh;
+}
+
+.closebutton:hover {
+    opacity: 1;
+}
+
+.closebutton:before,
+.closebutton:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.closebutton:before {
+    transform: rotate(45deg);
+}
+
+.closebutton:after {
+    transform: rotate(-45deg);
+}
+
+.imagecontent {
+    height: 85vh;
+    background: white;
+    opacity: 0.9;
+    font-family: "CandL";
+    font-size: 2.5em;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.imagecontent p {
+    padding-bottom: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 5vh;
+}
+
+#sixth {
+    width: 50%;
+    float: left;
+    background-color: rgb(100, 100, 100);
+    height: 100vh;
+}
+
+#sixth div h1,
+.pirating-label,
+.torrenting-label {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+#sixth div p {
+    font-size: 1em;
+    padding: 0;
+}
+
+.read {
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-family: 'Raleway';
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#sixth div p {
+    text-align: left;
+    padding-top: 4vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 5.5vh;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+}
+
+.pirating-label {
+    float: left;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 15vh;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    vertical-align: middle;
+    line-height: 15vh;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.torrenting-label {
+    float: right;
+    right: 0;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    height: 15vh;
+    vertical-align: middle;
+    line-height: 15vh;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.first-cont {
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    z-index: 2;
+    bottom: 0;
+}
+
+.second-cont {
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    bottom: 0;
+}
+
+#sixthnseventh {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 0px;
+}
+
+#seventh {
+    width: 50%;
+    float: right;
+    height: 100vh;
+    display: inline-block;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+}
+
+#seventh p {
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'CandL';
+    letter-spacing: 3px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+}
+
+#pirate {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50vh;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+#torrent {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50vh;
+    box-sizing: border-box;
+}
+
+.pirating {
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.torrenting {
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 50%;
+}
+
+.pirating img {
+    width: 100%;
+    height: 50vh;
+    float: right;
+    display: block;
+    transition: filter 0.7s, opacity 0.7s;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.torrenting img {
+    width: 100%;
+    height: 50vh;
+    float: right;
+    display: block;
+    transition: filter 0.7s, opacity 0.7s;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.6;
+}
+
+#torrent:hover + img {
+    opacity: 0.9;
+    filter: blur(4px) grayscale(70%);
+}
+
+#pirate:hover + img {
+    opacity: 0.9;
+    filter: blur(4px) grayscale(70%);
+}
+
+#eighth {
+    clear: both;
+    background-image: url("../images/headphones.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#ninth {
+    background-color: rgb(100, 100, 100);
+    height: 100vh;
+    width: 100%;
+}
+
+.righ {
+    width: 50%;
+    float: right;
+    height: 100vh;
+    display: inline-block;
+    background-color: rgb(100, 100, 100);
+}
+
+.lef {
+    width: 50%;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.list-type,
+.second-type {
+    width: 60%;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.list-type ol,
+.second-type ol {
+    list-style-type: none;
+    list-style-type: decimal !ie;
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+    counter-reset: li-counter;
+}
+
+.list-type ol li,
+.second-type ol li {
+    color:white;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    background-color: #778899;
+    padding-left: 60px;
+    vertical-align: middle;
+    line-height: 3vh;
+    font-family:'Raleway';
+    font-size:1.1em;
+    font-weight: bold;
+}
+
+.list-type a,
+.second-type a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.second-type ol li:before,
+.list-type ol li:before {
+    position: absolute;
+	left: -55px;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border: 28.5px solid transparent;
+	border-top-color: black;  
+    font-size: 0em;
+    vertical-align: middle;
+    line-height: ;
+    font-weight: bold;
+    text-align: center;
+    color: ;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+    transform: rotate(90deg);
+}
+
+.second-type ol li:after,
+.list-type ol li:after {
+    position: absolute;
+	left: 1px;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border: 28.5px solid transparent;
+	border-top-color: white;  
+    font-size: 0em;
+    vertical-align: middle;
+    line-height: ;
+    font-weight: bold;
+    text-align: center;
+    color: w;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+    transform: rotate(270deg);
+}
+
+#ninth h1 {
+    font-size: 3em;
+    font-family: 'CandL';
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#ninth p {
+    font-family: 'CandL';
+    font-size: 2em;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.righ h1 {
+    color: white;
+}
+
+.righ p {
+    color: white;
+}
+
+#tenth {
+    background-image: url("../images/circuitb.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#eleventh {
+    background-color: rgb(200, 200, 200);
+    height: 100vh;
+    width: 100%;
+}
+
+#slider {
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#mask {
+    margin-top: 8vh;
+    overflow: hidden;
+    height: 80%;
+}
+
+#slider ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#slider li {
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: -325px;
+    list-style: none;
+}
+
+#slider li img {
+    width: 100%;
+    height: 100%;
+}
+
+#slider li.firstanimation {
+    animation: cycle 25s linear infinite;
+}
+
+#slider li.secondanimation {
+    animation: cycletwo 25s linear infinite;
+}
+
+#slider li.thirdanimation {
+    animation: cyclethree 25s linear infinite;
+}
+
+#slider li.fourthanimation {
+    animation: cyclefour 25s linear infinite;
+}
+
+#slider li.fifthanimation {
+    animation: cyclefive 25s linear infinite;
+}
+
+@keyframes cycle {
+    0% {
+        top: 0px;
+    }
+    4% {
+        top: 0px;
+    }
+    16% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    20% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    21% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    92% {
+        top: -325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    96% {
+        top: -325px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes cycletwo {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    16% {
+        top: -325px;
+        opacity: 0;
+    }
+    20% {
+        top: 0px;
+        opacity: 1;
+    }
+    24% {
+        top: 0px;
+        opacity: 1;
+    }
+    36% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    40% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    41% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes cyclethree {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    36% {
+        top: -325px;
+        opacity: 0;
+    }
+    40% {
+        top: 0px;
+        opacity: 1;
+    }
+    44% {
+        top: 0px;
+        opacity: 1;
+    }
+    56% {
+        top: 0px;
+        opacity: 1;
+    }
+    60% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    61% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes cyclefour {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    56% {
+        top: -325px;
+        opacity: 0;
+    }
+    60% {
+        top: 0px;
+        opacity: 1;
+    }
+    64% {
+        top: 0px;
+        opacity: 1;
+    }
+    76% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    80% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    81% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes cyclefive {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    76% {
+        top: -325px;
+        opacity: 0;
+    }
+    80% {
+        top: 0px;
+        opacity: 1;
+    }
+    84% {
+        top: 0px;
+        opacity: 1;
+    }
+    96% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    100% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+.progress-bar {
+    position: relative;
+    top: -5px;
+    width: 680px;
+    height: 5px;
+    background: #000;
+    animation: fullexpand 25s ease-out infinite;
+}
+
+@keyframes fullexpand {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        width: 0%;
+        opacity: 0;
+    }
+    4%,
+    24%,
+    44%,
+    64%,
+    84% {
+        width: 0%;
+        opacity: 0.3;
+    }
+    16%,
+    36%,
+    56%,
+    76%,
+    96% {
+        width: 100%;
+        opacity: 0.7;
+    }
+    17%,
+    37%,
+    57%,
+    77%,
+    97% {
+        width: 100%;
+        opacity: 0.3;
+    }
+    18%,
+    38%,
+    58%,
+    78%,
+    98% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+.tooltip {
+    background: rgba(0, 0, 0, 0.7);
+    width: 300px;
+    height: 60px;
+    position: relative;
+    bottom: 75px;
+}
+
+.tooltip h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 60px;
+    padding: 0 0 0 10px;
+    margin-left: 10%;
+    font-family: 'NeouB';
+    letter-spacing: 1px;
+}
+
+.container {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 14%;
+    width: 50%;
+    height: 100vh;
+    height: auto;
+}
+
+#enter {
+    width: 50%;
+    height: 25vh;
+    position: relative;
+    float: right;
+    margin-top: 10vh;
+    margin-right: 5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: 'CandL';
+    color: white;
+    font-size: 1.5em;
+}
+
+#enter h1 {
+    margin-top: 5vh;
+}
+
+#fun-facts {
+    width: 30%;
+    position: absolute;
+    margin-top: 7vh;
+    margin-left: 10%;
+}
+
+#list2 {
+    width: 100%;
+}
+
+#list2 ol {
+    font-family: 'CandL';
+    font-size: 25px;
+    color: black;
+}
+
+#list2 ol li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#list2 ol li p {
+    padding: 15px;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    border-left: 1px solid white;
+}
+
+#list2 ol li p em {
+    display: block;
+}
