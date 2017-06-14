@@ -1101,3 +1101,30 @@ a {
 #list2 ol li p em {
     display: block;
 }
+#auto-scroll {
+    position: absolute;
+    width: 4%;
+    height: 70px;
+    top: 85%;
+    left: 94%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.scroll-up {
+    width: 100%;
+    height: 35px;
+    background-image: url(../images/scroll-up.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scroll-down {
+    width: 100%;
+    height: 35px;
+    background-image: url(../images/scroll-up.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    margin-top: 5px;
+}
